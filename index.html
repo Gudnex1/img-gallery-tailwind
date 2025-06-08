@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+        <!-- card container -->
+        <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-30">
+            <!-- menu -->
+            <div
+                class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end">
+                <!-- items -->
+                <div class="group">
+                    <a href="#">Vector</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#">illusteration</a>
+                    <div
+                        class="mx-1.5 mt-1.5 duration-700 opacity-0 group-hover:opacity-100 border-b-2 transition border-black">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#">Images</a>
+                    <div
+                        class="mx-1.5 mt-1.5 duration-700 opacity-0 group-hover:opacity-100 border-b-2 transition border-black">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#">Icons</a>
+                    <div
+                        class="mx-1.5 mt-1.5 duration-700 opacity-0 group-hover:opacity-100 border-b-2 transition border-black">
+                    </div>
+                </div>
+            </div>
+            <!-- search -->
+            <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
+                <div class="flex justify-between border-b">
+                    <input type="search" name="search" id="search"
+                        class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none"
+                        placeholder="Search..">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 text-gray-300 duration-200 hover:scale-110"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="10" cy="10" r="7"></circle>
+                            <line x1="21" y1="21" x2="15" y2="15"></line>
+                        </svg>
+                    </button>
+                </div>
+                <button
+                    class="py-3 px-14 text-lg font-medium text-white bg-black border border-black rounded-md shadowxl duration-200 hover:bg-slate-200 hover:text-black">Upload</button>
+            </div>
+            <!-- galery -->
+            <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 items-center">
+                <!-- img1 --> 
+                <div class="relative group">
+                    <img src="./img/art-7537620_1280.jpg" alt="kk" class="w-72 bg-contain">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <img src="./img/eye-4559763_1280.jpg" alt="kk" class="w-72 h-40 bg-cover">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <img src="./img/hamburg-7633324_1280.jpg" alt="kk" class="w-72">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <img src="./img/italy-8266783_1280.jpg" alt="kk" class="w-72">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <img src="./img/photovoltaic-system-2742302_1280.jpg" alt="kk" class="w-72">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <img src="./img/potassium-salt-4549408_1280.jpg" alt="kk" class="w-72">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <img src="./img/red-hair-girl-8158373_1280.jpg" alt="kk" class="w-72">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <img src="./img/sheeps-6816871_1280.jpg" alt="kk" class="w-72 h-auto">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <img src="./img/slava-jamm-9tck4_gloOQ-unsplash.jpg" alt="kk" class="w-72 h-auto">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-60">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract</p>
+                                <p class="text-xs">25likes - 35 shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./img/bookmark.svg" alt="bookmark" class="hover:cursor-pointer">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
